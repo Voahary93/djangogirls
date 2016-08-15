@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+    <h1>Mes billets de blog</h1>
+    {% for i in Posts %}
+        <p>{{ i.title }}</p>
+        <p>{{ i.text }}</p>
+    {% endfor %}
+    </body>
+</html>
